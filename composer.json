@@ -1,0 +1,15 @@
+{
+    "name": "tiup/tcs",
+    "authors": [
+        {
+            "name": "lizw",
+            "email": "lizw@tiup.us"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TIup\\Tcs\\":"src/"
+        }
+    },
+    "require": {}
+}
