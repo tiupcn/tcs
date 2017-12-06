@@ -11,5 +11,7 @@
             "TIup\\Tcs\\":"src/"
         }
     },
-    "require": {}
+    "require": {
+        "curl/curl": "^1.8"
+    }
 }
