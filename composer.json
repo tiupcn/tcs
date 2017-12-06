@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "TIup\\Tcs\\":"src/"
+            "Tiup\\Tcs\\":"src/"
         }
     },
     "require": {
