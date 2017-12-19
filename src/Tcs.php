@@ -31,7 +31,7 @@ class Tcs
         Cache::put($cache_key, $code, $this->expire);
         $content = str_replace("#code#", $code, $this->template);
         $this->sms($phone, $content);
-        return true;
+        return $code;
     }
 
     //检查验证码
@@ -57,7 +57,7 @@ class Tcs
         $curl->post($url, json_encode($params));
         $response = json_decode($curl->response);
         if ($curl->error) {
-            throw new \Exception($response->msg, 1);   
+            throw new \Exception($curl->error_message.' '.$url, 1);   
         }
         return true;
     }
