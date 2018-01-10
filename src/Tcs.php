@@ -57,7 +57,7 @@ class Tcs
         $curl->post($url, json_encode($params));
         $response = json_decode($curl->response);
         if ($curl->error) {
-            throw new \Exception($curl->error_message.' '.$url, 1);   
+            throw new \Exception($response->msg, $response->code);   
         }
         return true;
     }
