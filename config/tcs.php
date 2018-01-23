@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'host' => env('TCS_HOST', 'https://tcs.tiup.cn'),
+    'host' => env('TCS_HOST', 'https://tcshost'),
     'token' => env('TCS_TOKEN', ''),
     'prefix' => env('TCS_PREFIX', 'tcs_verify_'),
     'expire' => env('TCS_EXPIRE', 5),
